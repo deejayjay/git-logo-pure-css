@@ -32,7 +32,8 @@ body {
 }
 
 .line1::before,
-.line1::after {
+.line1::after,
+.line2::after {
   content: "";
   width: 32px;
   height: 32px;
@@ -50,3 +51,19 @@ body {
   top: -10px;
   right: -10px;
 }
+
+.line2 {
+  width: 90px;
+  height: 12px;
+  background-color: var(--white);
+  rotate: 45deg;
+  position: absolute;
+  top: 70px;
+  left: 20px;
+}
+
+.line2::after {
+  top: -10px;
+  right: -24px;
+}
+
