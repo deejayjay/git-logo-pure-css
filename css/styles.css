@@ -1,3 +1,9 @@
+:root {
+  --white: #fefefe;
+  --orange: #f06033;
+  --bg-color: azure;
+}
+
 body {
   padding: 0;
   margin: 0;
@@ -5,5 +11,42 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: azure;
+  background-color: var(--bg-color);
+}
+
+.git-logo {
+  background-color: var(--orange);
+  height: 150px;
+  width: 150px;
+  border-radius: 1rem;
+  rotate: 45deg;
+  position: relative;
+}
+
+.line1 {
+  width: 110px;
+  height: 10px;
+  background-color: var(--white);
+  top: 40px;
+  position: absolute;
+}
+
+.line1::before,
+.line1::after {
+  content: "";
+  width: 32px;
+  height: 32px;
+  background-color: var(--white);
+  border-radius: 50%;
+  position: absolute;
+}
+
+.line1::before {
+  top: -10px;
+  left: 16px;  
+}
+
+.line1::after {
+  top: -10px;
+  right: -10px;
 }
